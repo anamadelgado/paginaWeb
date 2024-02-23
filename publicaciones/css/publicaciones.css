@@ -34,18 +34,7 @@ body {
   transform: translate(-50% -50%);
 }
 
-.texto {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  color: white;
-  text-align: center;
-  font-size: 7em;
-  font-family: "Barlow", sans-serif;
-  font-weight: 200;
-}
+
 
 .nav {
   display: flex;
