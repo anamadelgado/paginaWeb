@@ -3,48 +3,50 @@
   <head>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="contactanos.css" />
+    <link rel="stylesheet" href="css/contactanos.css" />
+    <link rel="stylesheet" href="css/respon.css" />
+    <title>Wild Tours</title>
+    <link rel="shortcut icon" href="img/logoNegro.png" />
   </head>
   <body>
     <header>
       <section class="container">
         <div class="foto-container">
-          <img src="8612ae_67bd0f11b10f48cfb824b56045598e13~mv2.webp" alt="fondo" />
+          <img src="img/8612ae_67bd0f11b10f48cfb824b56045598e13~mv2.webp" alt="fondo" />
 
           <div class="texto"><p>Contacta con nosotros</p></div>
         </div>
-        <div class="menu" id="menu">
+        <nav class="nav">
           <div class="logo">
-            <img src="prueba.png" alt="Logo de la Empresa" />
             <a href="../principal/index.html">
-              <h1>WILD TOURS</h1>
-            </a>
+            <img src="img/ULTIMOLOGO-removebg-preview.png" alt="logo">
+          </a>
           </div>
-          <div class="menu-responsive">
+          <div class="menu-responsive" id="menu-toggle">
             <i class="fas fa-bars"></i>
           </div>
-          <nav class="nav">
-            <ul>
+          <div class="menu">
+            <ul class="menu1">
+  
               <li class="desplegable">
                 <a href="../destinos/destinos.html">Destinos</a>
                 <ul class="desplegable-content">
-                    <li><a href="../propioDestino/propioDestinos.html">Sudáfrica</a></li>
-                    <li><a href="../propioDestino/propioDestinos.html">Seychelles</a></li>
-                    <li><a href="../propioDestino/propioDestinos.html">kenia</a></li>
-                    <li><a href="../propioDestino/propioDestinos.html">MAURICIO</a></li>
-                    <li><a href="../propioDestino/propioDestinos.html">Zambia</a></li>
-                    <li><a href="../propioDestino/propioDestinos.html">Namibia</a></li>
-                    <li><a href="../propioDestino/propioDestinos.html">Maldivas</a></li>
-                    <li><a href="../propioDestino/propioDestinos.html">Mozambique</a></li>
-                    <li><a href="../propioDestino/propioDestinos.html">Tanzania</a></li>
-                    <li><a href="../propioDestino/propioDestinos.html">Zanzíbar</a></li>
-                    <li><a href="../propioDestino/propioDestinos.html">Ruanda</a></li>
+                  <li><a href="../propioDestino/propioDestinos.html">Sudáfrica</a></li>
+                  <li><a href="../propioDestino/propioDestinos.html">Seychelles</a></li>
+                  <li><a href="../propioDestino/propioDestinos.html">kenia</a></li>
+                  <li><a href="../propioDestino/propioDestinos.html">MAURICIO</a></li>
+                  <li><a href="../propioDestino/propioDestinos.html">Zambia</a></li>
+                  <li><a href="../propioDestino/propioDestinos.html">Namibia</a></li>
+                  <li><a href="../propioDestino/propioDestinos.html">Maldivas</a></li>
+                  <li><a href="../propioDestino/propioDestinos.html">Mozambique</a></li>
+                  <li><a href="../propioDestino/propioDestinos.html">Tanzania</a></li>
+                  <li><a href="../propioDestino/propioDestinos.html">Zanzíbar</a></li>
+                  <li><a href="../propioDestino/propioDestinos.html">Ruanda</a></li>
                 </ul>
-            </li>
               </li>
               <li>
                 <a href="../nosotros/nosotros.html">Sobre Wild Tours</a>
@@ -56,23 +58,24 @@
                 <a href="../contactanos/contactanos.html">Contáctanos</a>
               </li>
               <li>
-                <div class="busqueda">
-                  <input type="button" id="botonBuscar" value="Buscar..." />
-                  <i class="fa-solid fa-magnifying-glass" style="color: white"></i>
-                </div>
+  
               </li>
             </ul>
-          </nav>
-        </div>
-        <a href="#" class="btn-flotante">CONTÁCTANOS</a>
+  
+          </div>
+        </nav>
+
+ 
       </section>
     </header>
+    <a href="contactanos.html" class="btn-flotante"><i class="fa-regular fa-comment-dots" style="color: #ffffff;"></i>CONTÁCTANOS</a>
+
     <section class="section2">
         <p class="tituloSection2">Aquí empieza tu safari</p>
     
         <div class="formulario">
 
-            <form  method="post" enctype="multipart/form-data">
+            <form >
               <div class="container-formu">
 
               <div class="formulario-item">
@@ -88,7 +91,7 @@
             <div class="container-formu">
               <div class="formulario-item">
                 <label for="email">Email </label>
-                <input type="email" name="email" maxlength="50" required />  
+                <input id="email" type="email" name="email" maxlength="50" required />  
               </div>
               <div class="formulario-item">
                 <label for="email1">Repetir Email </label>
@@ -98,92 +101,92 @@
               <div class="formulario-item2">
           
                 <label for="mensaje">Déjanos un mensaje.. </label>
-                <textarea id="mensaje" rows="5" cols="50" name="observaciones"></textarea>
+                <textarea  id="mensaje" rows="5" cols="50" name="observaciones"></textarea>
               </div>
+              <div id="mensajeError" class="error">  </div>
               <div class="formulario-item3">
-              <button class="botonFormu">Enviar</button>
+              <button type="button" class="botonFormu" id="enviar">Enviar</button>
               </div>
+           
+
+            
+
+
             </form>
           
        
-        
-      </div>
+
+    </section>
+    <section class="agradecimiento">
+      <p>¡Tu mensaje ha sido recibido! Nos pondremos en contacto contigo lo más pronto posible para ayudarte con lo que necesites.</p>
+
     </section>
 
     <div class="image2"></div>
 
-  <footer>
+ 
     <div class="parte1">
       <p >¿Buscas inspiración para tu próximo destino?</p>
       <div class="correo">
-      <input type="email" placeholder="Email*" >
-      <div class="flecha"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></div>
-    </div>
-    </div>
-    <div class="footer">
-      <div class="contenedorFooter">
-        <div class="footer1">
-          <p>Estaremos encantados de ayudarte</p>
-          <div class="footerContent">
-            <div class="footer1Logo">
-              <img src="logoNegro.png" class="footerImagenLogo" alt="logo">
-              <h1>WILD TOURS</h1>
-            </div>
-            <div class="footer1Botones">
-              <input type="button" value="EMAIL">
-              <input type="button" value="TELÉFONO">
-            </div>
-          </div>
-        </div>
-        <div class="footer1">
-          <p>Destinos</p>
-          <ul>
-            <li><a href="#">SUDÁFRICA</a></li>
-            <li><a href="#">SEYCHELLES</a></li>
-            <li><a href="#">KENIA</a></li>
-            <li><a href="#">MAURICIO</a></li>
-            <li><a href="#">ZAMBIA</a></li>
-            <li><a href="#">NAMIBIA</a></li>
-            <li><a href="#">BOTSUANA</a></li>
-            <li><a href="#">MALDIVAS</a></li>
-            <li><a href="#">MOZAMBIQUE</a></li>
-            <li><a href="#">TANZANIA</a></li>
-            <li><a href="#">ZANZÍBAR</a></li>
-            <li><a href="#">RUANDA</a></li>
-          </ul>
-        </div>
-        <div class="footer1">
-          <p>Oficina central de Wild Tours</p>
-          <div class="mapa">
-            <i class="fa-solid fa-map-location-dot" style="color: #000000;"></i>
-            <p class="ubicacion">Sevilla</p>
-          </div>
-        </div>
-        <div class="footer1">
-          <p>Únete a nuestra comunidad</p>
-          <ul class="redesSociales">
-            <li><i class="fa-brands fa-twitter" style="color: #000000;"></i><i class="fa-brands fa-facebook"
-                style="color: #000000;"></i><i class="fa-brands fa-instagram" style="color: #000000;"></i><i
-                class="fa-brands fa-youtube" style="color: #000000;"></i></li>
-          </ul>
-        </div>
+        <form>
+          <input type="email" placeholder="Email*" required>
+          <button  id="btn-flecha" class="flecha"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></button>
+        </form>
       </div>
     </div>
+    
 
-    <div class="parte2">
-      <ul>
-        <li><a href="#">Política de privacidad </a> </li>
-        <li><a href="#">Términos de uso</a></li>
-        <li><a href="#">Políticas de cookies</a></li>
-        <li><a href="#"> Términos y condiciones</a></li>
-      </ul>
+    <footer>
+      <div class="footer-item1">
+        <div class="item1-1">
+          <p>Estaremos encantados de ayudarte</p>
+          <img src="img/ULTIMOLOGO-removebg-preview.png">
+          <div class="botones">
+            <button><i class="fa-regular fa-envelope" style="color: #000000;"></i>Email</button>
+            <button><i class="fa-solid fa-phone" style="color: #000000;"></i>Teléfono</button>
+          </div>
 
-    </div>
- 
-  </footer>
+        </div>
+        <div class="item1-2">
+          <p>Accesos directos</p>
+          <ul>
+            <li><a href="../destinos/destinos.html"><i class="fa-solid fa-chevron-right" style="color: #a9aeb7;"></i>Destinos</a></li>
+            <li><a href="../nosotros/nosotros.html"><i class="fa-solid fa-chevron-right" style="color: #a9aeb7;"></i>Sobre Wild Tours</a></li>
+            <li><a href="../publicaciones/publicaciones.html"><i class="fa-solid fa-chevron-right" style="color: #a9aeb7;"></i>Publicaciones</a></li>
+            <li><a href="../contactanos/contactanos.html"><i class="fa-solid fa-chevron-right" style="color: #a9aeb7;"></i>Contactanos</a></li>
+          </ul>
 
+        </div>
+        <div class="item1-3">
+          <p>Únete a nuestra comunidad</p>
+          <ul class="section5-lista1">
+            <li><i class="fa-brands fa-instagram" style="color: #a9aeb7;"></i></li>
+            <li><i class="fa-brands fa-square-facebook" style="color: #a9aeb7;"></i></li>
+            <li><i class="fa-brands fa-square-x-twitter" style="color: #a9aeb7;"></i></li>
+            <li><i class="fa-brands fa-youtube" style="color: #a9aeb7;"></i></li>
+          </ul>
+
+        </div>
+
+      </div>
+      <div class="footer-item2">
+        <p>Wild Tours © 2021 - 2024. Todos los derechos reservados.</p>
+        <ul>
+          <li><a href="../politicas/politica.html">Política de privacidad</a></li>
+          <li><a href="../politicas/politica.html">Políticas de cookies</a></li>
+          <li><a href="../politicas/politica.html" class="border">Aviso legal</a></li>
+        </ul>
+
+      </div>
+    </footer>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script type="text/javascript" src="nuevaPagina.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>

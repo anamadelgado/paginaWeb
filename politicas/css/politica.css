@@ -1,0 +1,303 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-color: #f8f1e7;
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+}
+
+
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  padding-bottom: 1em;
+  z-index: 999;
+  background-color: white;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo img {
+  width: 150px;
+}
+
+ul.menu1 {
+  font-size: 12px;
+}
+
+.menu1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  margin-right: 2em;
+  font-size: 2em;
+  font-family: "barlow", sans-serif;
+  font-weight: 200;
+}
+
+.menu-responsive {
+  cursor: pointer;
+  display: none;
+  font-size: 24px;
+}
+
+.fa-bars {
+  color: #000;
+}
+
+.desplegable-content {
+  display: none;
+  width: 10%;
+  position: absolute;
+  background-color: #f9f9f9;
+  z-index: 1;
+}
+
+.desplegable-content a {
+  color: #000;
+}
+
+.desplegable:hover .desplegable-content {
+  display: block;
+}
+
+.btn-flotante {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 5px;
+  background-color: rgb(64, 64, 64);
+  padding: 0.8em 1em;
+  position: fixed;
+  bottom: 3em;
+  right: 1em;
+  transition: all 300ms ease 0ms;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer-item1 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+
+
+}
+
+.item1-1 {
+  background-color: #f8f1e7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: calc(100%/3);
+  padding-bottom: 2em;
+}
+
+.item1-1 img {
+  width: 200px;
+  margin-top: 2em;
+}
+
+.item1-1 p {
+  margin-top: 2em;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.botones {
+  margin-top: 2em;
+}
+
+.botones button {
+  background-color: transparent;
+  border: 1px solid black;
+
+  cursor: pointer;
+  margin-right: 1em;
+  padding: 1em 2em 1em 2em;
+
+}
+
+.botones button i {
+  margin-right: 5px;
+}
+
+.botones button:hover {
+  background-color: black;
+  color: white;
+
+
+
+}
+
+.item1-3 {
+  background-color: #f8f1e7;
+  padding-bottom: 2em;
+}
+
+.item1-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2em;
+  width: calc(100%/3);
+  background-color: #fff;
+}
+
+.item1-2 ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.item1-2 li {
+
+  font-size: 1.5em;
+  line-height: 2em;
+  cursor: pointer;
+
+}
+
+.item1-2 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.fa-chevron-right {
+  font-size: 20px;
+  margin-right: 1em;
+}
+
+.item1-2 p {
+  margin-top: 2em;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.item1-3 {
+  background-color: #f8f1e7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100%/3);
+}
+
+.item1-3 p {
+  margin-top: 2em;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.footer-item2 {
+  background-color: #000;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 10vh;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+.footer-item2 ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.footer-item2 a {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #ffffff;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+.footer-item2 li {
+
+  border-left: #ffffff;
+  color: #ffffff;
+}
+
+.section5-lista1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1em;
+
+}
+
+.section5-lista1 li {
+  list-style: none;
+  margin-left: 1em;
+}
+
+.fa-instagram,
+.fa-square-facebook,
+.fa-square-x-twitter,
+.fa-youtube {
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.politica {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10em;
+
+  padding-bottom: 5em;
+}
+
+.politica-container {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.politica h1 {
+  font-size: 3em;
+
+  font-weight: 300;
+}
+
+.politica p {
+  margin-top: 1em;
+  font-size: 2em;
+}
+
+.border {
+  border-right: none !important;
+}
+
+.fa-comment-dots {
+  margin-right: 10px;
+}
